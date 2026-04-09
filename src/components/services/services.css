@@ -1,0 +1,89 @@
+.container_services{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.container_services .card{
+    width: 31%;
+    padding: 50px 40px;
+    background: var(--color-bg-variant);
+    border-radius: 1rem;
+    transition: var(--transition);
+    border: 1px solid transparent;
+}
+
+.container_services .card:hover{
+    background: transparent;
+    border-color: var(--color-primary);
+}
+
+.container_services .icon{
+    font-size: 70px;
+    margin-bottom: 20px;
+    color: var(--color-primary);
+}
+
+.container_services h3{
+    margin-bottom: 20px;
+}
+
+.container_services p{
+    font-size: 14px;
+}
+
+/* ================== Tablet ================== */
+@media screen and (max-width: 900px) {
+
+    .container_services{
+        justify-content: center;
+        gap: 20px;
+    }
+
+    .container_services .card{
+        width: 45%; /* كارتين جنب بعض */
+        padding: 40px 25px;
+    }
+
+    .container_services .icon{
+        font-size: 60px;
+    }
+
+    .container_services h3{
+        font-size: 18px;
+    }
+
+    .container_services p{
+        font-size: 13px;
+    }
+}
+
+
+/* ================== Mobile ================== */
+@media screen and (max-width: 600px) {
+
+    .container_services{
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .container_services .card{
+        width: 100%; /* كل كارت لوحده */
+        padding: 30px 20px;
+        text-align: center;
+    }
+
+    .container_services .icon{
+        font-size: 50px;
+    }
+
+    .container_services h3{
+        font-size: 17px;
+    }
+
+    .container_services p{
+        font-size: 12px;
+        line-height: 1.6;
+    }
+}

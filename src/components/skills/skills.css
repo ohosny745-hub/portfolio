@@ -1,0 +1,62 @@
+.container_skills {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+
+/* الكارد */
+.container_skills .card_skill {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    border: 1px solid var(--color-bg-variant);
+    padding: 15px;
+    border-radius: 12px;
+}
+
+/* الأيقونة */
+.container_skills .card_skill .icon {
+    width: 60px;
+    height: 60px;
+    padding: 8px;
+    border-radius: 10px;
+    background: var(--color-bg-variant);
+    flex-shrink: 0;
+}
+
+/* النص */
+.container_skills .card_skill h4 {
+    font-size: 16px;
+}
+
+.container_skills .card_skill p {
+    font-size: 14px;
+}
+
+
+
+/* تابلت */
+@media (max-width: 768px) {
+    .container_skills {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* موبايل */
+@media (max-width: 480px) {
+    .container_skills {
+        grid-template-columns: 1fr;
+    }
+
+    .container_skills .card_skill {
+        padding: 12px;
+    }
+
+    .container_skills .card_skill h4 {
+        font-size: 15px;
+    }
+
+    .container_skills .card_skill p {
+        font-size: 13px;
+    }
+}

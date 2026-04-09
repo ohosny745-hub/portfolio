@@ -1,0 +1,85 @@
+.projects {
+    padding: 60px 0;
+}
+
+.top_section {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.top_section h5 {
+    color: #888;
+    font-size: 14px;
+}
+
+.top_section h2 {
+    font-size: 32px;
+    margin-top: 10px;
+}
+
+/* Grid Layout */
+.projects_container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+/* Card */
+.portfolio_item {
+    background: #2c2c6c;
+    padding: 15px;
+    border-radius: 15px;
+    transition: 0.3s;
+    border: 1px solid transparent;
+}
+
+.portfolio_item:hover {
+    transform: translateY(-10px);
+    border-color: #4db5ff;
+}
+
+/* Image */
+.portfolio_item_img {
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.portfolio_item_img img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    display: block;
+}
+
+/* Content */
+.content {
+    margin-top: 15px;
+    text-align: center;
+}
+
+.content h3 {
+    font-size: 18px;
+    color: #fff;
+}
+
+/* Responsive */
+
+/* Tablet */
+@media screen and (max-width: 1024px) {
+    .projects_container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+}
+
+/* Mobile */
+@media screen and (max-width: 600px) {
+    .projects_container {
+    grid-template-columns: 1fr;
+    }
+
+    .portfolio_item_img img {
+    height: 180px;
+    }
+}
